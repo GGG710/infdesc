@@ -1,1 +1,963 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{multirow}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{quote}
+Uma descida infinita em Matemática Pura
+\end{quote}
+
+\includegraphics[width=0.70694in,height=1.65972in]{vertopal_8f28c058ced248c09cffcbfdc362d1d6/media/image1.png}
+
+POR CLIVE NEWSTEAD
+
+\begin{quote}
+\emph{Com adaptações de Jonas Galvao Xavier/Tradução por George Galvao}
+\end{quote}
+
+\emph{Moreira}
+
+\emph{Última atualização em Monday 4th March 2024}
+
+\begin{quote}
+Trabalho Original © 2023 Clive Newstead, Todos Direitos Reservados.
+\end{quote}
+
+Adaptatações © 2024 Jonas Galvao Xavier, Todos Direitos Reservados.
+
+Prévia da Primeira Edição(Em breve)
+
+\begin{quote}
+ISBN 978-1-950215-00-3 (Brochura) ISBN 978-1-950215-01-0 (Capa dura)
+
+Uma cópia gratuita de \emph{Uma Descida Infinita Em Matemática Pura}
+pode ser obtido através do site do livro:
+
+Este livro, suas figuras e fontes TEX são lançadas sob uma atribuição
+criativa internacional "Creative Commons Attribution--ShareAlike 4.0
+International Licence". O texto completo da licença está replicado no
+fim do livro, e pode ser achada no site Creative Commons:\\
+\strut \\
+\emph{Para meus Pais,}\\
+\emph{Imogen e Matthew (1952--2021),} \emph{Que me ensinaram tanto.}
+\end{quote}
+
+iv
+
+\begin{quote}
+\textbf{Conteúdo}
+
+Preface vii
+
+Reconhecimentos xiii
+
+0Começando 1
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule()
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+I
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+0.E
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Chapter 0 exercises . . . . . . . . . . . . . . . . . . . . . . . . . .
+. .
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+20
+\end{minipage} \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Conceitos centrais
+\end{quote}
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+23
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\emph{Contents}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule()
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Apêndice
+\end{quote}
+\end{minipage}} &
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+28
+\end{quote}
+\end{minipage}} &
+\multirow{4}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+27
+\end{minipage}} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+AMiscelânea matemática
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+27
+\end{quote}
+\end{minipage} \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+A.1Definir fundamentos teóricos . . . . . . . . . . . . . . . . . . . .
+. . .
+\end{quote}
+\end{minipage}} \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+A.2Construções dos conjuntos de números . . . . . . . . . . . . . . . .
+. .
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+29
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+A.3Limites de funções . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . 47
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+BDicas para exercícios selecionados
+\end{minipage} &
+\multirow{8}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+51
+\end{quote}
+\end{minipage}} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+55
+\end{minipage}} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Indices
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índice de tópicos
+\end{quote}
+\end{minipage} & & \begin{minipage}[b]{\linewidth}\raggedright
+55
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índice de vocabulário
+\end{quote}
+\end{minipage} & & \begin{minipage}[b]{\linewidth}\raggedright
+55
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índice de notação
+\end{quote}
+\end{minipage} & & \begin{minipage}[b]{\linewidth}\raggedright
+57
+\end{minipage} \\
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índices de comandos LATEX
+\end{quote}
+\end{minipage}} & & \begin{minipage}[b]{\linewidth}\raggedright
+57
+\end{minipage} \\
+& & \multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+61
+\end{minipage}} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Licence
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+iv
+
+\textbf{Prefácio}
+
+\begin{quote}
+Olá, e obrigado por tirar tempo pra ler essa rápida introdução à
+\emph{Uma Descida Infinita em Pura Matemática}! A versão mais recente do
+livro, em inglês, está gratuitamente disponível para download no
+seguinte site:
+\end{quote}
+
+O site também inclui informações sobre mudanças entre diferentes versões
+do livro,
+
+\begin{quote}
+um arquivo de versões prévias, e alguns recursos para usar LATEX (veja
+também ??).
+\end{quote}
+
+Sobre o livro
+
+\begin{quote}
+Um estudante em uma típica classe de cálculo vai aprender sobre a "regra
+da cadeia" e posteriormente a como usa-lá para resolver alguns problemas
+pré-escritos de "regra da cadeia" assim como calcular a derivada de
+sin(1+\emph{x}2) com respeito a \emph{x}, ou talvez resolver um problema
+de palavras envolvendo taxas de variação relacionadas a mudança. A
+expectativa é que o estudante aplique corretamente a regra da cadeia
+para derivar a resposta correta, e mostrar trabalho suficiente para ser
+crível. Nesse sentido, o estudante é um \emph{consumidor} da matemática.
+Eles recebem a regra da cadeia como uma ferramenta, a ser aceita sem
+questionamento, para então resolver um grupo pequeno de problemas.
+
+O objetivo desse livro é ajudar o leitor a fazer a transição: de um
+\emph{consumidor} da matemática para um \emph{produtor} dela. É isso que
+significa `pura' matemática. Enquanto um consumidor da matemática pode
+aprender a regra da cadeia e usa-la para calcular uma derivada, um
+produtor da matemática pode derivar a regra da cadeia a partir de uma
+rigorosa definição de uma derivada, e então provar mais versões
+abstratas da regra da cadeia em contextos mais gerais (como análise
+multivariável).
+
+Dos consumidores da matemática é esperado que digam como usaram suas
+ferramentas para encontrar suas respostas. Produtores da matemática, por
+outro lado, tem muito mais a fazer: Eles precisam estar prontos para
+acompanhar as definições e hipóteses,
+\end{quote}
+
+v
+
+vi \emph{Prefácio} juntar os dados em novas e interessantes formas, e
+fazer suas próprias definições de conceitos matemáticos. Ainda mais, uma
+vez que eles fizeram isso, eles devem comunicar suas descobertas de uma
+forma que outros considerem inteligível, e eles precisam convencer
+outros que aquilo que eles fizeram está correto, apropriado e que vale a
+pena.
+
+É essa a transição do consumo para produção de matemática que guiou os
+princípios usados para planejar e escrever esse livro. Em particular:
+
+•Comunicação. Acima de tudo, este livro visa ajudar o leitor a obter
+alfabetização matemática e se expressar matematicamente. Isso ocorre em
+muitos níveis de ampliação. Por exemplo, considere a seguinte expressão:
+
+∀\emph{x} ∈ R\emph{,} {[}¬(\emph{x} = 0) ⇒ (∃\emph{y} ∈ R\emph{, y}2
+\emph{\textless{} x}2){]}
+
+\begin{quote}
+Depois de trabalhar com esse livro, você será capaz de dizer o que os
+símbolos ∀, ∈, R, ¬, ⇒ e ∃ significam intuitivamente e como eles são
+definidos precisamente. Mas
+
+você terá também que saber interpretar o que a expressão significa como
+um todo,
+
+explicar o que significa em termos simples para que outra pessoa entenda
+\emph{sem} usar
+
+símbolos confusos, provar que aquilo é verdade, e comunicar sua prova
+para outra
+
+pessoa de uma forma clara e concisa.
+
+Os tipos de ferramentas necessárias para fazer isso estão desenvolvidas
+nos capítulos principais do livro, e mais foco é dado para o lado
+escrito das coisas.
+\end{quote}
+
+•Inquérito. As pessoas aprendem mais quando elas descobrem as coisas por
+elas mesmas. Usando esse princípio ao extremo o livro estaria em branco.
+No entanto, eu acredito que é importante incorporar aspectos da
+aprendizagem baseada em investigação no texto.
+
+\begin{quote}
+Este princípio manifesta-se na medida que existem exercícios espalhados
+pelo texto, muitos dos quais simplesmente requerem que você prove um
+resultado. Muitos leitores vão achar isso frustrante, mas isso é por um
+bom motivo: esses exercícios servem como pontos de controle para
+garantir que seu entendimento desse material é suficiente para proceder.
+Aquele sentimento de frustração é o que se chamaria de aprendizado ---
+abrace-o!
+\end{quote}
+
+•Estratégia. Uma prova matemática é muito parecida com um quebra-cabeça.
+Em qualquer fase dada em uma prova, você vai ter algumas definições,
+premissas e resultados que estão disponíveis para ser usados, e você
+precisa junta-los usando as regras lógicas à sua disposição. Por todo
+livro, e particularmente nos primeiros capítulos, eu fiz um esforço para
+destacar estratégias úteis de prova em qualquer lugar que elas surjam.
+
+vi
+
+•Conteúdo. Não há muito sentido em aprender matemática se você não tem
+nenhum conceito para prova. Com isso em mente, ?? inclui vários
+capítulos dedicados à introdução de algumas áreas temáticas em
+matemática pura, tanto quanto teoria dos números, combinatórias, análise
+e teoria da probabilidade.
+
+\begin{quote}
+\emph{Prefácio} ix
+\end{quote}
+
+•LATEX. O \emph{de facto} padrão para composição matemática é o LATEX.
+Eu acho que é importante para matemáticos aprender sobre ele cedo de uma
+forma guiada, então
+
+\begin{quote}
+eu escrevi um breve tutorial no ?? e inclui código LATEX para toda nova
+notação conforme definida ao longo do livro.
+
+Navegando o livro
+
+Esse livro não precisa, e enfaticamente \emph{não deve}, ser lido de
+frente para trás. A ordem desse material foi escolhida de forma que o
+material que aparece depois depende apenas do material que aparece
+antes, mas seguir o material na ordem que é apresentado pode ser uma
+experiência bastante seca.
+
+A maioria dos cursos introdutórios de matemática pura abrange, no
+mínimo, lógica simbólica, conjuntos, funções e relações. Este material é
+o conteúdo do Part I. Tais cursos frequentemente abrangem tópicos
+adicionais da matemática pura, com exatamente \emph{quais} tópicos
+dependendo do que o curso está preparando os estudantes. Com isso em
+mente, ?? serve como uma introdução para uma gama de áreas de matemática
+pura, incluindo teoria dos números, combinatórias, teoria dos conjuntos,
+análise real, teoria das probabilidades e teoria da ordem.
+
+Não é necessário cobrir toda a Part I antes de seguir os tópicos. Na
+verdade, intercalar material pode ser uma maneira útil de motivar muitos
+dos conceitos abstratos que surgem na Part I.
+
+A seguinte tabela mostra dependências entre seções. Seções prévias
+dentro do mesmo capítulo que uma seção deveria ser considerado
+`essencial' pré-requisitos, a menos que indicado de outra forma.
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Parte
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Seção
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Essencial
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Recomendado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+útil
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+I
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+0
+\end{quote}
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+??
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+vii
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule()
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+viii
+\end{quote}
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} &
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\emph{Prefácio}
+\end{minipage}} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??, ??
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+??, ?? ??
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule()
+\multirow{12}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??, ??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} &
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} &
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+??, ??
+\end{quote}
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+??, ??
+\end{quote}
+\end{minipage}} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} &
+\multirow{4}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??, ??
+\end{minipage}} &
+\multirow{6}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} \\
+& \multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} \\
+& & & \multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage}} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+??
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+??, ??
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+Pré-requisitos são cumulativos. Por exemplo, a fim de cobrir ??, você
+deveria primeiro cobrir 0?.
+\end{quote}
+
+O que os números, cores e símbolos significam
+
+\begin{quote}
+Falando amplamente, o material nesse livro está fragmentado em itens
+enumerados que em uma de cinco categorias: definições, resultados,
+observações, exemplos e exercícios. Na ??, nós também temos extratos de
+provas. Para melhorar navegabilidade, essas categorias são distintas por
+nome, cor e símbolo, como indicado na seguinte tabela.
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Categoria
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Símbolo
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Cor
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+Definições & ✦ & \textbf{Vermelho} \\
+\bottomrule()
+\end{longtable}
+
+viii
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule()
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Resultados\\
+Observações Categoria
+\end{quote}\strut
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+✣
+\end{quote}
+\end{minipage} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Azul}
+\end{quote}
+\end{minipage}} \\
+& \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+❖
+\end{quote}
+\end{minipage} &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}@{}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Roxo}
+\end{quote}
+\end{minipage}} \\
+&
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+Símbolo
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Cor
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\multirow{3}{*}{\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+Exemplos\\
+Exercícios\\
+Extratos de provas
+\end{quote}\strut
+\end{minipage}} & ✐ &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Verde}
+\end{quote}
+\end{minipage}} \\
+& ✎ &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}@{}}{%
+\textbf{Dourado}} \\
+& ❝ &
+\multicolumn{2}{>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5000} + 2\tabcolsep}@{}}{%
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Verde}
+\end{quote}
+\end{minipage}} \\
+\bottomrule()
+\end{longtable}
+
+Estes itens estão enumerados de acordo com próprias seções. Definições e
+teoremas
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+(Resultados importantes) aparecem em uma caixa .
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.0000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+\emph{Prefácio}
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+xi
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+Você também vai encontrar os símbolos □ e ◁ cujos significados são os
+seguintes:
+
+\begin{quote}
+□ Fim de uma prova. É um padrão em documentos matemáticos para
+identificar quando uma prova acabou por desenhar um pequeno quadrado ou
+por escrever `\emph{Q.E.D.}' (Este último significa \emph{quod erat
+demonstrandum}, que é latim para \emph{que deveria ser mostrado}.)
+
+◁ Fim do item. Isso \emph{não é} um uso padrão, e está incluído apenas
+para ajudá-lo a identificar quando um item foi concluído e o conteúdo
+principal do livro continua.
+
+Algumas subjeções são rotuladas com o símbolo \emph{⋆}. Isso indica que
+o material dessa subseção pode ser ignorada sem consequências drásticas.
+
+Licença
+
+Este livro está licenciado sob Creative Commons Attribution-ShareAlike
+4.0 (CC BY- SA 4.0) licence. Isso significa que você está convidado a
+compartilhar o conteúdo desse livro,desde que você dê crédito ao autor e
+que qualquer cópia ou derivados desde livro sejam liberados sob a mesma
+licença.
+
+A licenca pode ser lida em sua totalidade no final do livro ou seguindo
+o URL:
+\end{quote}
+
+x \emph{Prefácio} Comentários e correções
+
+\begin{quote}
+Qualquer feedback, seja de alunos, professores assistentes, instrutores
+ou quaisquer outros leitores, será muito apreciado. Particularmente
+úteis são correções de erros tipográficos, sugestões de formas
+alternativas de descrever conceitos ou provar teoremas e solicitações de
+novos conteúdos. (e.g. se você conhecer um bom exemplo que possa
+ilustrar um conceito, ou se tiver um conceito relevante que você
+desejaria ver nesse livro).
+
+Tal feedback pode ser mandado para o autor e adaptador por email (clive@
+infinitedescent.xyz e jonas.agx@gmail.com, respectivamente).
+\end{quote}
+
+x
+
+\begin{quote}
+\textbf{Reconhecimentos}
+\end{quote}
+
+Quando reflito sobre o tempo que passei escrevendo este livro, fico
+impressionado com o número de pessoas que tiveram algum tipo de
+influência em seu conteúdo.
+
+Este livro nunca teria existido se não fosse pelo curso 38-801 de Chad
+Hershock\emph{Ensinos Baseados em Evidências ciêntificas},No qual fiz no
+outono de 2014 como estudante de pós-graduação na Carnegie Mellon
+University. Seu curso influenciou fortemente minha abordagem de ensino
+e, em primeiro lugar, motivou-me a escrever este livro. Muitas das
+decisões pedagógicas que tomei ao escrever este livro foram informadas
+por pesquisas às quais fui exposto quando era aluno da turma de Chad.
+
+O lendário professor da Carnegie Mellon, John Mackey, tem usado este
+livro (em vários formatos) como notas de curso para 21-128
+\emph{Conceitos Matemáticos e Provas} e 15-151 \emph{Fudamentos
+Matemáticos da Ciência da Computação} Desde o outono de 2016. Sua
+influência pode ser sentida ao longo de todo o livro: graças às
+discussões com John, muitas provas foram reformuladas, seções
+reestruturadas e explicações melhoradas. Como resultado, há alguma
+sobreposição entre os exercícios deste livro e as questões nas folhas de
+problemas. Estou extremamente grato por seu apoio contínuo.
+
+Steve Awodey, que foi meu orientador de tese de doutorado, tem sido uma
+fonte de inspiração para mim há muito tempo. Muitas das escolhas que fiz
+ao escolher como apresentar o material deste livro baseiam-se no meu
+desejo de fazer matemática. \emph{O caminho certo}---foi esse desejo que
+me levou a estudar a teoria das categorias e, por fim, a me tornar aluno
+de doutorado de Steve. Aprendi muito com ele e apreciei muito sua
+paciência e flexibilidade em ajudar a direcionar minha pesquisa, apesar
+de minha agenda lotada de ensino e de meus interesses extracurriculares
+(como escrever este livro).
+
+Talvez sem o conhecimento deles, muitas conversas esclarecedoras com as
+seguintes pessoas ajudaram a moldar o material deste livro de uma forma
+ou de outra: Jeremy Avigad, Deb Brandon, Santiago Cañez, Heather Dwyer,
+Thomas Forster, Will Gunther, Kate Hamilton, Jessica Harrell, Bob
+Harper, Brian Kell, Marsha Lovett, Ben Millwood,
+
+xi
+
+\emph{Index of LATEX commands}
+
+\emph{Reconhecimentos}
+
+\begin{quote}
+David Offner, Ruth Poproski, Emily Riehl, Hilary Schuldt, Gareth Taylor,
+Katie Walsh, Emily Weiss e Andy Zucker.
+
+Uma rede \emph{Stack Exchange} influenciou o desenvolvimento deste livro
+de duas maneiras importantes. Primeiro, sou um membro ativo do
+\emph{Mathematics Stack Exchange} desde o início de 2012 e aprendi muito
+sobre como explicar conceitos matemáticos de maneira eficaz;
+ocasionalmente, uma pergunta sobre Mathematics Stack Exchange me inspira
+a adicionar um novo exemplo ou
+
+exercício ao livro. Em segundo lugar, tenho feito uso frequente do
+\emph{LATEX Stack Exchange} para implementar alguns dos aspectos
+
+mais técnicos de escrever um livro usando o LATEX .
+
+O Departamento de Ciências Matemáticas da Carnegie Mellon University
+apoiou-me academicamente, profissionalmente e financeiramente ao longo
+do meu doutoramento e me apresentou mais oportunidades do que eu poderia
+esperar para me desenvolver como professor. Este apoio é agora
+continuado pelo Departamento de Matemática da Northwestern University,
+onde trabalho atualmente como professor.
+
+Gostaria também de agradecer a todos nos centros de ensino da Carnegie
+Mellon e da Northwestern, no Eberly Center e no Searle Center,
+respectivamente. Através de vários workshops, programas e bolsas em
+ambos os centros de ensino, aprendi muito sobre como as pessoas aprendem
+e transformei-me como professor. Sua abordagem da ciência do ensino e da
+aprendizagem, centrada no aluno e baseada em evidências, está subjacente
+a tudo o que faço como professor, inclusive ao escrever este livro ---
+sua influência não pode ser subestimada.
+
+Finalmente, e mais importante, sou grato aos mais de 1.000 alunos que já
+usaram este livro para aprender matemática. Cada vez que um aluno entra
+em contato comigo para tirar uma dúvida ou apontar um erro, o livro fica
+melhor; isso se reflete nas dezenas de erros tipográficos que foram
+corrigidos como consequência.
+\end{quote}
+
+Clive Newstead
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+Janeiro
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+de
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+2020
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+Evanston, Illinois
+
+xii
+
+\end{document}
 
