@@ -1,0 +1,406 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{multirow}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{quote}
+Uma descida infinita em
+\end{quote}
+
+Matemática Pura
+
+\includegraphics[width=0.72361in,height=1.65417in]{vertopal_4deb24da623b4584acff086462d50b0d/media/image1.png}
+
+\begin{quote}
+POR CLIVE NEWSTEAD\\
+\emph{Com adaptações de Jonas Galvao Xavier/Tradução por George Galvao}
+\emph{Moreira}
+\end{quote}
+
+\emph{Última atualização em Thursday 29th February 2024} Trabalho
+Original © 2023 Clive Newstead, Todos Direitos Reservados.\\
+Adaptatações © 2024 Jonas Galvao Xavier, Todos Direitos Reservados.
+
+\begin{quote}
+Prévia da Primeira Edição(Em breve)
+\end{quote}
+
+ISBN 978-1-950215-00-3 (Brochura)\\
+ISBN 978-1-950215-01-0 (Capa dura)
+
+Uma cópia gratuita de \emph{Uma Descida Infinita Em Matemática Pura}
+pode ser obtido através do site do livro:
+
+Este livro, suas figuras e fontes TEX são lançadas sob uma atribuição
+criativa internacional "Creative Commons Attribution--ShareAlike 4.0
+International Licence". O texto completo da licença está replicado no
+fim do livro, e pode ser achada no site Creative Commons:
+
+\begin{quote}
+\emph{Para meus Pais,}\\
+\emph{Imogen e Matthew (1952--2021),}\\
+\emph{Que me ensinaram tanto.}
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Conteúdo
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule()
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Prefácio}
+
+\textbf{Reconhecimentos}
+\end{quote}
+\end{minipage} & \textbf{vii}
+
+\textbf{xiii} \\
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+0\textbf{Começando 1}
+
+0.E Capítulo 0 exercícios . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . .. . . . . . . . . . . . . .20\textbf{I}
+
+\textbf{Conceitos centrais}23
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+AMiscelânea matemática
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+27
+\end{quote}
+\end{minipage} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+28
+\end{quote}
+\end{minipage}} &
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Apêndice}
+\end{quote}
+\end{minipage}} &
+\multirow{3}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+27
+\end{minipage}} \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.4000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+A.1Definir fundamentos teóricos . . . . . . . . . . . . . . . . . . . .
+. . .
+\end{quote}
+\end{minipage}} \\
+\multicolumn{2}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.4000} + 2\tabcolsep}}{%
+\begin{minipage}[b]{\linewidth}\raggedright
+A.2Construções dos conjuntos de números . . . . . . . . . . . . . . . .
+. .
+\end{minipage}} & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+29
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+A.3Limites de funções . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . 47
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule()
+\begin{minipage}[b]{\linewidth}\raggedright
+BDicas para exercícios selecionados
+\end{minipage} &
+\multirow{8}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+51
+\end{quote}
+\end{minipage}} &
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+55
+\end{minipage}} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Índices}
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índice de tópicos
+\end{quote}
+\end{minipage} & & \begin{minipage}[b]{\linewidth}\raggedright
+55
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índice de vocabulário
+\end{quote}
+\end{minipage} & & \begin{minipage}[b]{\linewidth}\raggedright
+55
+\end{minipage} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índice de notação
+\end{quote}
+\end{minipage} & & \begin{minipage}[b]{\linewidth}\raggedright
+57
+\end{minipage} \\
+\multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Índices de comandos LATEX
+\end{quote}
+\end{minipage}} & & \begin{minipage}[b]{\linewidth}\raggedright
+57
+\end{minipage} \\
+& & \multirow{2}{*}{\begin{minipage}[b]{\linewidth}\raggedright
+61
+\end{minipage}} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+Licença
+\end{quote}
+\end{minipage} \\
+\midrule()
+\endhead
+\bottomrule()
+\end{longtable}
+
+\begin{quote}
+2.E Exercícios do Capítulo 2 . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . 108
+
+\textbf{3 Funções} . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . .113
+
+3.1 Funções . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . .114
+
+3.2 Injeções e sobrejeções . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . 130
+
+3.E Exercícios do Capítulo 3 . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . 145
+
+\textbf{4 Indução matemática} . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . .151
+
+4.1 Axiomas de Peano. . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . 152
+
+4.2 Indução fraca. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . .159
+
+4.3 Indução forte. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . 174
+
+4.E Exercícios do Capítulo 4 . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . 182
+
+\textbf{5.Relações} . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . 185
+
+5.1 Relações . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . .186
+
+5.2 Relações de equivalência e partições . . . . . . . . . . . . . . . .
+196
+
+5.E Exercícios do Capítulo 5 . . . . . . . . . . . . . . . . . . . . . .
+. . . . . 208
+
+\textbf{6 Conjuntos finitos e infinitos} . . . . . . . . . . . . . . . .
+. . . . . . . . . 211
+
+6.1 Conjuntos finitos . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . 212
+
+6.2 Conjuntos contáveis e incontáveis. . . . . . . . . . . . . . . . . .
+. .222
+
+6.E Exercícios do Capítulo 6 . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . 236
+
+II Tópicos de matemática pura. . . . . . . . . . . 237
+
+\textbf{7 Teoria dos Números}.. . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . 239
+
+7.1 Divisão. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . .240
+
+Contents vii
+
+7.2 Números primos . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . 255 7.3 Aritimética modular . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . 264 7.E Exercícios capítulo 7. . . . . . . . . . . . .
+. . . . . . . . . . . . . . . 290
+
+\textbf{8 Combinatória Enumerativa}. . . . . . . . . . . . . . . . . . .
+. . .293 8.1 Princípios de contagem . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . 294 8.2 Somas alternadas. . . . . . . . . . . . . .
+. . . . . . . . . . . . . . . 314 8.E Capútulo 8 exercícios. . . . . . .
+. . . . . . . . . . . . . . . . . . . . . 330
+
+\textbf{9 Números reais}. . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . .333 9.1 Desigualdades e meios . . . . . . . . . . .
+. . . . . . . . . . . . . . . 334 9.2 Completude e convergência. . . . .
+. . . . . . . . . . . . . . . . . 353 9.3 Séries e somas. . . . . . . .
+. . . . . . . . . . . . . . . . . . . . . . 378 9.E Exercícios capítulo
+9. . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+
+\textbf{10 Infinidade}405\\
+10.1 Cardinalidade . . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . 406 10.2 Aritimética cardinal. . . . . . . . . . . . . . . . .
+. . . . . . . . . . . 415
+
+10E. Exercícios capítulo 10. . . . . . . . . . . . . . . . . . . . . . .
+. . . . 427
+
+\textbf{11 Teoria da probabilidade discreta}. . . . . . . . . . . . . .
+. . . . . . . . . .431 11.1 Espaços de probabilidade discretos. . . . .
+. . . . . . . . . . . . . . . . . . . 432 11.2 Variáveis aleatórias
+discretas. . . . . . . . . . . . . . . . . . . . . . . . 451 11.E
+Exercícios capitulo 10. . . . . . . . . . . . . . . . . . . . . . . . .
+. . 468
+
+\textbf{12 Tópicos adicionais}. . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . .469\\
+12.1 Ordens e redes. . . . . . . . . . . . . . . . . . . . . . . . . . .
+. 470\\
+12.2 Conjuntos definidos indutivamente. . . . . . . . . . . . . . . . .
+. . . . . . . . . 482 12.E Exercícios capítulo 12. . . . . . . . . . . .
+. . . . . . . . . . . . . . . 504\\
+Contents ix\\
+\textbf{Appendices} 507
+
+\textbf{A Proof-writing} 507
+
+A.1 Elements of proof-writing . . . . . . . . . . . . . . . . . . . . .
+. . . . 508 A.2 Vocabulary for proofs . . . . . . . . . . . . . . . . .
+. . . . . . . . . . . 517
+
+\textbf{B Mathematical miscellany} 531 B.1 Set theoretic foundations . .
+. . . . . . . . . . . . . . . . . . . . . . . 532 B.2 Constructions of
+the number sets . . . . . . . . . . . . . . . . . . 537 B.3 Limits of
+functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+.554
+
+\textbf{C Hints for selected exercises} . . . . . . . . . . . . . . . .
+. . . . . . . 559
+
+\textbf{D Typesetting mathematics with LATEX 575}
+
+\textbf{Indices} 591
+
+\textbf{Index of topics} 591
+
+\textbf{Index of vocabulary} 596
+
+\textbf{Index of notation} 597
+
+\textbf{Index of LATEX commands} 600
+
+\textbf{Licence} 605
+\end{quote}
+
+\end{document}
